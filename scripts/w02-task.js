@@ -17,7 +17,7 @@ let imageElement = document.querySelector("img");
 /* Step 4 - Adding Content */
 nameElement.innerHTML = `<strong>${fullName}</strong>`;
 yearElement.textContent = currentYear;
-const profilePic = "images/profilePic.jpeg";
+const profilePic = "../images/profilePic.jpeg";
 document.querySelector("img").setAttribute("src", profilePic);
 
 

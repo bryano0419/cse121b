@@ -3,7 +3,7 @@
 /* Profile Object  */
 let myProfile = {
     name: 'Bryan Osorio',
-    photo: 'images/profilePic.jpeg',
+    photo: '../images/profilePic.jpeg',
     favoriteFoods: [
         'Pizza',
         'Fried Chicken',
@@ -37,7 +37,7 @@ myProfile.placesLived.push(
 
 /* DOM Manipulation - Output */
 document.querySelector('#name').textContent = myProfile.name;
-document.querySelector('#photo').alt = myProfile.photo;
+document.querySelector('#photo').setAttribute('alt', myProfile.photo);
 
 myProfile.favoriteFoods.forEach(food => {
     let li = document.createElement('li');
